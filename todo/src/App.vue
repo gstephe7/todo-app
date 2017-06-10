@@ -19,8 +19,8 @@
       <div class="row">
         <div class="col-xs-12">
           <ul>
-            <li v-for="item in list">
-              <todo-list v-bind:list="list" v-bind:item="item"></todo-list>
+            <li v-for="(item, index) in list">
+              <todo-list v-bind:list="list" v-bind:item="item" v-bind:index="index"></todo-list>
             </li>
           </ul>
         </div>
