@@ -15,7 +15,17 @@
     <todo-input v-bind:list="list"></todo-input>
 
     <!-- To-Do List -->
-    <todo-list v-bind:list="list"></todo-list>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul>
+            <li v-for="item in list">
+              <todo-list v-bind:list="list" v-bind:item="item"></todo-list>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
   </div>
 
